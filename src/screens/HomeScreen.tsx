@@ -29,6 +29,7 @@ export function HomeScreen() {
   const t = useT()
   const locale = useLocale()
   const setLocale = useSettings((s) => s.setLocale)
+  const name = useSettings((s) => s.name)
   const navigate = useNavigate()
   const plan = useTodayPlan()
   const history = useProgress((s) => s.history)
@@ -44,7 +45,7 @@ export function HomeScreen() {
         <header className="row between home-head">
           <div className="col">
             <span className="home-greet">{t(greetingKey())}</span>
-            <span className="d home-name">{t('greeting.athlete')}</span>
+            <span className="d home-name">{name ?? t('greeting.athlete')}</span>
           </div>
           <div className="row" style={{ gap: 8 }}>
             <button className="icon-btn home-lang" onClick={() => setLocale(locale === 'en' ? 'uk' : 'en')}>

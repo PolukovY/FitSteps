@@ -7,12 +7,13 @@ import { useLocale, useT } from '../i18n'
 import { LOCALES, LOCALE_LABELS } from '../i18n/locales'
 import { useProgress, useSettings } from '../store/useAppStore'
 import './settings.css'
+import './onboarding.css'
 
 export function SettingsScreen() {
   const t = useT()
   const navigate = useNavigate()
   const locale = useLocale()
-  const { voiceCoach, sound, vibration, countdown, setLocale, toggle } = useSettings()
+  const { name, voiceCoach, sound, vibration, countdown, setLocale, setName, toggle } = useSettings()
   const resetAll = useProgress((s) => s.resetAll)
   const [confirmReset, setConfirmReset] = useState(false)
 
@@ -27,6 +28,18 @@ export function SettingsScreen() {
           </button>
           <h1 className="d settings-title">{t('settings.title')}</h1>
         </div>
+
+        <section className="col settings-group">
+          <span className="label">{t('settings.name')}</span>
+          <input
+            className="onboarding-input"
+            defaultValue={name ?? ''}
+            maxLength={24}
+            placeholder={t('onboarding.placeholder')}
+            // Committed on blur so an empty field mid-edit never wipes the name.
+            onBlur={(e) => e.target.value.trim() && setName(e.target.value)}
+          />
+        </section>
 
         <section className="col settings-group">
           <span className="label">{t('settings.language')}</span>

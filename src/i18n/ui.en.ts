@@ -1,6 +1,13 @@
 export default {
   'app.name': 'FitSteps',
 
+  'onboarding.welcome': 'Welcome to',
+  'onboarding.question': 'What should we call you?',
+  'onboarding.hint': 'Used to greet you. It never leaves this device.',
+  'onboarding.placeholder': 'Your name',
+  'onboarding.continue': 'Start training',
+  'onboarding.language': 'Language',
+  'onboarding.pitch': 'Guided home workouts. No equipment, no account.',
   'nav.home': 'Home',
   'nav.programs': 'Programs',
   'nav.library': 'Library',
@@ -157,6 +164,7 @@ export default {
   'progress.weekTarget': '{done} / {target} workouts',
 
   'settings.title': 'Settings',
+  'settings.name': 'Your name',
   'settings.language': 'Language',
   'settings.voiceCoach': 'Voice coach',
   'settings.voiceCoachHint': 'Spoken cues before, during and after each exercise.',

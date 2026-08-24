@@ -1,6 +1,13 @@
 export default {
   'app.name': 'FitSteps',
 
+  'onboarding.welcome': 'Вітаємо у',
+  'onboarding.question': 'Як до вас звертатися?',
+  'onboarding.hint': 'Потрібне лише для привітання. Не залишає цей пристрій.',
+  'onboarding.placeholder': 'Ваше імʼя',
+  'onboarding.continue': 'Почати тренуватись',
+  'onboarding.language': 'Мова',
+  'onboarding.pitch': 'Домашні тренування з підказками. Без інвентарю та акаунту.',
   'nav.home': 'Головна',
   'nav.programs': 'Програми',
   'nav.library': 'Вправи',
@@ -157,6 +164,7 @@ export default {
   'progress.weekTarget': '{done} / {target} тренувань',
 
   'settings.title': 'Налаштування',
+  'settings.name': 'Ваше імʼя',
   'settings.language': 'Мова',
   'settings.voiceCoach': 'Голосовий тренер',
   'settings.voiceCoachHint': 'Голосові підказки до, під час і після вправи.',

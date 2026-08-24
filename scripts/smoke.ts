@@ -10,7 +10,7 @@ import { WORKOUTS, findWorkout } from '../src/data/workouts'
 import { RIGS } from '../src/components/figure/rigs'
 import { buildSteps, muscleLoadOf, musclesOf, replaceStep, totalSeconds } from '../src/engine/session'
 import { samplePose, buildSkeleton } from '../src/components/figure/kinematics'
-import { translate } from '../src/i18n/registry'
+import { missingKeys, translate } from '../src/i18n/registry'
 import { currentStreak, longestStreak } from '../src/lib/streak'
 import { addDays, dayKey } from '../src/lib/dates'
 import type { Locale } from '../src/data/types'
@@ -21,6 +21,12 @@ const check = (condition: boolean, message: string) => {
 }
 
 const LOCALES: Locale[] = ['en', 'uk']
+
+// Every English key must exist in Ukrainian; a fallback to English in a
+// Ukrainian UI is a bug, not a graceful degradation.
+for (const key of missingKeys('uk')) {
+  failures.push(`missing Ukrainian translation for "${key}"`)
+}
 
 // Every exercise resolves its own copy in both languages.
 for (const exercise of EXERCISES) {

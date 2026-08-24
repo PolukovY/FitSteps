@@ -4,11 +4,14 @@ import type { Locale, Muscle } from '../data/types'
 import { detectLocale } from '../i18n/locales'
 
 export interface Settings {
+  /** null until onboarding collects it; the app shows the name screen while it is. */
+  name: string | null
   locale: Locale
   voiceCoach: boolean
   sound: boolean
   vibration: boolean
   countdown: boolean
+  setName: (name: string) => void
   setLocale: (l: Locale) => void
   toggle: (key: 'voiceCoach' | 'sound' | 'vibration' | 'countdown') => void
 }
@@ -16,11 +19,13 @@ export interface Settings {
 export const useSettings = create<Settings>()(
   persist(
     (set) => ({
+      name: null,
       locale: detectLocale(),
       voiceCoach: true,
       sound: true,
       vibration: true,
       countdown: true,
+      setName: (name) => set({ name: name.trim().slice(0, 24) || null }),
       setLocale: (locale) => set({ locale }),
       toggle: (key) => set((s) => ({ [key]: !s[key] }) as Partial<Settings>),
     }),

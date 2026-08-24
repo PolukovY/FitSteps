@@ -10,6 +10,8 @@ import { SettingsScreen } from './screens/SettingsScreen'
 import { WorkoutIntroScreen } from './screens/WorkoutIntroScreen'
 import { PlayerScreen } from './screens/PlayerScreen'
 import { CompleteScreen } from './screens/CompleteScreen'
+import { OnboardingScreen } from './screens/OnboardingScreen'
+import { useSettings } from './store/useAppStore'
 
 /** The tab bar belongs to the browsing screens only — the workout is full screen. */
 const TAB_ROUTES = ['/', '/programs', '/library', '/progress']
@@ -39,6 +41,17 @@ function Shell() {
 }
 
 export function App() {
+  const name = useSettings((s) => s.name)
+
+  // No name yet means no app: onboarding owns the whole surface until it has one.
+  if (!name) {
+    return (
+      <div className="app-frame">
+        <OnboardingScreen />
+      </div>
+    )
+  }
+
   return (
     <HashRouter>
       <Shell />
