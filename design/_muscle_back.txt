@@ -1,0 +1,19 @@
+<svg viewBox="0 0 100 192" width="__W__" height="__H__" fill="none">
+  <circle cx="50" cy="14" r="9" fill="__BASE__"/>
+  <path d="M50 24 33 34l4 12h26l4-12z" fill="__TRAP__"/>
+  <ellipse cx="28" cy="38" rx="9" ry="7" fill="__DELT__"/>
+  <ellipse cx="72" cy="38" rx="9" ry="7" fill="__DELT__"/>
+  <path d="M37 46h12v22l-13-6z" fill="__LAT__"/>
+  <path d="M63 46H51v22l13-6z" fill="__LAT__"/>
+  <path d="M40 70h20v18H40z" fill="__LOWBACK__" rx="3"/>
+  <ellipse cx="22" cy="56" rx="6" ry="12" fill="__TRI__"/>
+  <ellipse cx="78" cy="56" rx="6" ry="12" fill="__TRI__"/>
+  <ellipse cx="17" cy="81" rx="5" ry="13" fill="__BASE__"/>
+  <ellipse cx="83" cy="81" rx="5" ry="13" fill="__BASE__"/>
+  <path d="M40 90c-6 0-9 5-9 10s4 9 10 9h8V90z" fill="__GLUTE__"/>
+  <path d="M60 90c6 0 9 5 9 10s-4 9-10 9h-8V90z" fill="__GLUTE__"/>
+  <ellipse cx="41" cy="130" rx="9" ry="21" fill="__HAM__"/>
+  <ellipse cx="59" cy="130" rx="9" ry="21" fill="__HAM__"/>
+  <ellipse cx="40" cy="164" rx="6.5" ry="16" fill="__CALF__"/>
+  <ellipse cx="60" cy="164" rx="6.5" ry="16" fill="__CALF__"/>
+</svg>

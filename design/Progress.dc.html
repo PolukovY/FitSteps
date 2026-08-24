@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #0B0C0F; color: #F2F4F7; font-family: Manrope, "Segoe UI", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #D7F25A; } a:hover { color: #EAFF8F; }
+    .d { font-family: Oswald, "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: 0.02em; font-weight: 600; }
+  </style>
+</helmet>
+
+<div style="width: 390px; height: 1000px; overflow: hidden; background: #0B0C0F; display: flex; flex-direction: column;">
+  <div style="padding: 52px 20px 0 20px; display: flex; flex-direction: column; gap: 16px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between;">
+      <div class="d" style="font-size: 28px;">Progress</div>
+      <span style="font-size: 12px; font-weight: 700; color: #6D747E;">All time</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;">
+      <div style="height: 86px; border-radius: 18px; background: #14161B; border: 1px solid #1E222A; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;"><span style="font-size: 10px; font-weight: 800; color: #6D747E; letter-spacing: 0.1em;">WORKOUTS</span><span class="d" style="font-size: 30px; line-height: 1;">24</span></div>
+      <div style="height: 86px; border-radius: 18px; background: #14161B; border: 1px solid #1E222A; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;"><span style="font-size: 10px; font-weight: 800; color: #6D747E; letter-spacing: 0.1em;">TRAINING TIME</span><span class="d" style="font-size: 30px; line-height: 1;">6h 42m</span></div>
+      <div style="height: 86px; border-radius: 18px; background: linear-gradient(150deg, rgba(255,122,69,0.14), #14161B 70%); border: 1px solid #3A2318; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;"><span style="font-size: 10px; font-weight: 800; color: #9A7E70; letter-spacing: 0.1em;">CURRENT STREAK</span><span class="d" style="font-size: 30px; line-height: 1; color: #FF9166;">5 days</span></div>
+      <div style="height: 86px; border-radius: 18px; background: #14161B; border: 1px solid #1E222A; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;"><span style="font-size: 10px; font-weight: 800; color: #6D747E; letter-spacing: 0.1em;">LONGEST STREAK</span><span class="d" style="font-size: 30px; line-height: 1;">12 days</span></div>
+    </div>
+  </div>
+
+  <div style="flex-grow: 1; overflow: hidden; padding: 16px 20px 0 20px; display: flex; flex-direction: column; gap: 14px;">
+    <div style="border-radius: 20px; background: #14161B; border: 1px solid #1E222A; padding: 15px 16px; display: flex; flex-direction: column; gap: 12px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;">
+        <span class="d" style="font-size: 14px; color: #C8CED6; letter-spacing: 0.08em;">Weekly volume</span>
+        <span style="font-size: 11px; font-weight: 700; color: #6D747E;">last 8 weeks</span>
+      </div>
+      <div style="display: flex; align-items: flex-end; gap: 7px; height: 100px;"><div style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex-grow: 1;"><div style="width: 100%; height: 34px; border-radius: 6px 6px 3px 3px; background: #242A32;"></div><span style="font-size: 9px; font-weight: 700; color: #565C66;">1</span></div><div style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex-grow: 1;"><div style="width: 100%; height: 55px; border-radius: 6px 6px 3px 3px; background: #242A32;"></div><span style="font-size: 9px; font-weight: 700; color: #565C66;">2</span></div><div style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex-grow: 1;"><div style="width: 100%; height: 25px; border-radius: 6px 6px 3px 3px; background: #242A32;"></div><span style="font-size: 9px; font-weight: 700; color: #565C66;">3</span></div><div style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex-grow: 1;"><div style="width: 100%; height: 68px; border-radius: 6px 6px 3px 3px; background: #242A32;"></div><span style="font-size: 9px; font-weight: 700; color: #565C66;">4</span></div><div style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex-grow: 1;"><div style="width: 100%; height: 47px; border-radius: 6px 6px 3px 3px; background: #242A32;"></div><span style="font-size: 9px; font-weight: 700; color: #565C66;">5</span></div><div style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex-grow: 1;"><div style="width: 100%; height: 81px; border-radius: 6px 6px 3px 3px; background: #242A32;"></div><span style="font-size: 9px; font-weight: 700; color: #565C66;">6</span></div><div style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex-grow: 1;"><div style="width: 100%; height: 60px; border-radius: 6px 6px 3px 3px; background: #242A32;"></div><span style="font-size: 9px; font-weight: 700; color: #565C66;">7</span></div><div style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex-grow: 1;"><div style="width: 100%; height: 86px; border-radius: 6px 6px 3px 3px; background: #D7F25A;"></div><span style="font-size: 9px; font-weight: 700; color: #565C66;">8</span></div></div>
+    </div>
+
+    <div style="border-radius: 20px; background: #14161B; border: 1px solid #1E222A; padding: 15px 16px; display: flex; flex-direction: column; gap: 12px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;">
+        <span class="d" style="font-size: 14px; color: #C8CED6; letter-spacing: 0.08em;">Muscle balance</span>
+        <span style="font-size: 11px; font-weight: 700; color: #6D747E;">last 30 days</span>
+      </div>
+      <div style="display: flex; gap: 14px; align-items: center;">
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 8px;"><div style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 48px; font-size: 12px; font-weight: 700; color: #A7AEB8;">Legs</span>
+      <div style="flex-grow: 1; height: 8px; border-radius: 4px; background: #1A1E25;"><div style="width: 96%; height: 8px; border-radius: 4px; background: #D7F25A;"></div></div>
+      <span style="width: 26px; text-align: right; font-size: 11px; font-weight: 700; color: #6D747E;">96%</span>
+    </div><div style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 48px; font-size: 12px; font-weight: 700; color: #A7AEB8;">Core</span>
+      <div style="flex-grow: 1; height: 8px; border-radius: 4px; background: #1A1E25;"><div style="width: 78%; height: 8px; border-radius: 4px; background: #D7F25A;"></div></div>
+      <span style="width: 26px; text-align: right; font-size: 11px; font-weight: 700; color: #6D747E;">78%</span>
+    </div><div style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 48px; font-size: 12px; font-weight: 700; color: #A7AEB8;">Chest</span>
+      <div style="flex-grow: 1; height: 8px; border-radius: 4px; background: #1A1E25;"><div style="width: 54%; height: 8px; border-radius: 4px; background: rgba(215,242,90,0.45);"></div></div>
+      <span style="width: 26px; text-align: right; font-size: 11px; font-weight: 700; color: #6D747E;">54%</span>
+    </div><div style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 48px; font-size: 12px; font-weight: 700; color: #A7AEB8;">Back</span>
+      <div style="flex-grow: 1; height: 8px; border-radius: 4px; background: #1A1E25;"><div style="width: 32%; height: 8px; border-radius: 4px; background: rgba(215,242,90,0.45);"></div></div>
+      <span style="width: 26px; text-align: right; font-size: 11px; font-weight: 700; color: #6D747E;">32%</span>
+    </div><div style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 48px; font-size: 12px; font-weight: 700; color: #A7AEB8;">Arms</span>
+      <div style="flex-grow: 1; height: 8px; border-radius: 4px; background: #1A1E25;"><div style="width: 46%; height: 8px; border-radius: 4px; background: rgba(215,242,90,0.45);"></div></div>
+      <span style="width: 26px; text-align: right; font-size: 11px; font-weight: 700; color: #6D747E;">46%</span>
+    </div><div style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 48px; font-size: 12px; font-weight: 700; color: #A7AEB8;">Glutes</span>
+      <div style="flex-grow: 1; height: 8px; border-radius: 4px; background: #1A1E25;"><div style="width: 68%; height: 8px; border-radius: 4px; background: #D7F25A;"></div></div>
+      <span style="width: 26px; text-align: right; font-size: 11px; font-weight: 700; color: #6D747E;">68%</span>
+    </div></div>
+        <svg viewBox="0 0 100 192" width="60" height="115" fill="none">
+  <circle cx="50" cy="14" r="9" fill="#232830"/>
+  <path d="M50 24 33 34l4 12h26l4-12z" fill="rgba(215,242,90,0.34)"/>
+  <ellipse cx="28" cy="38" rx="9" ry="7" fill="#232830"/>
+  <ellipse cx="72" cy="38" rx="9" ry="7" fill="#232830"/>
+  <path d="M37 46h12v22l-13-6z" fill="rgba(215,242,90,0.34)"/>
+  <path d="M63 46H51v22l13-6z" fill="rgba(215,242,90,0.34)"/>
+  <path d="M40 70h20v18H40z" fill="#232830" rx="3"/>
+  <ellipse cx="22" cy="56" rx="6" ry="12" fill="#232830"/>
+  <ellipse cx="78" cy="56" rx="6" ry="12" fill="#232830"/>
+  <ellipse cx="17" cy="81" rx="5" ry="13" fill="#232830"/>
+  <ellipse cx="83" cy="81" rx="5" ry="13" fill="#232830"/>
+  <path d="M40 90c-6 0-9 5-9 10s4 9 10 9h8V90z" fill="#D7F25A"/>
+  <path d="M60 90c6 0 9 5 9 10s-4 9-10 9h-8V90z" fill="#D7F25A"/>
+  <ellipse cx="41" cy="130" rx="9" ry="21" fill="rgba(215,242,90,0.34)"/>
+  <ellipse cx="59" cy="130" rx="9" ry="21" fill="rgba(215,242,90,0.34)"/>
+  <ellipse cx="40" cy="164" rx="6.5" ry="16" fill="#232830"/>
+  <ellipse cx="60" cy="164" rx="6.5" ry="16" fill="#232830"/>
+</svg>
+
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 9px;">
+      <div class="d" style="font-size: 14px; color: #C8CED6; letter-spacing: 0.08em;">History</div>
+      <div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px; background: #14161B; border: 1px solid #1C2027;">
+      <div style="width: 38px; height: 38px; border-radius: 12px; background: rgba(215,242,90,0.10); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#D7F25A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17l9-10"/></svg></div>
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-size: 13px; font-weight: 700; color: #E7EBF0;">Full Body Starter</span>
+        <span style="font-size: 11px; font-weight: 600; color: #6D747E;">Today · 17:42 · 156 kcal</span>
+      </div>
+      <div style="display: flex; gap: 4px;"><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #2A303A;"></span></div>
+    </div><div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px; background: #14161B; border: 1px solid #1C2027;">
+      <div style="width: 38px; height: 38px; border-radius: 12px; background: rgba(215,242,90,0.10); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#D7F25A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17l9-10"/></svg></div>
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-size: 13px; font-weight: 700; color: #E7EBF0;">Strong Core</span>
+        <span style="font-size: 11px; font-weight: 600; color: #6D747E;">Yesterday · 12:10 · 98 kcal</span>
+      </div>
+      <div style="display: flex; gap: 4px;"><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #2A303A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #2A303A;"></span></div>
+    </div><div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px; background: #14161B; border: 1px solid #1C2027;">
+      <div style="width: 38px; height: 38px; border-radius: 12px; background: rgba(215,242,90,0.10); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#D7F25A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17l9-10"/></svg></div>
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-size: 13px; font-weight: 700; color: #E7EBF0;">7 Minute Daily</span>
+        <span style="font-size: 11px; font-weight: 600; color: #6D747E;">Mon · 07:20 · 64 kcal</span>
+      </div>
+      <div style="display: flex; gap: 4px;"><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #D7F25A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #2A303A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #2A303A;"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #2A303A;"></span></div>
+    </div>
+    </div>
+  </div>
+
+  <div style="height: 82px; flex-shrink: 0; border-top: 1px solid #1A1D24; background: #101216; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 10px 8px 0 8px;">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6D747E" stroke-width="1.9" stroke-linejoin="round"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg><span style="font-size: 10px; font-weight: 700; color: #6D747E;">Home</span></div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6D747E" stroke-width="1.9" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg><span style="font-size: 10px; font-weight: 700; color: #6D747E;">Programs</span></div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6D747E" stroke-width="1.9" stroke-linecap="round"><path d="M4 9v6M8 7v10M16 7v10M20 9v6M8 12h8"/></svg><span style="font-size: 10px; font-weight: 700; color: #6D747E;">Library</span></div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7F25A" stroke-width="1.9" stroke-linecap="round"><path d="M5 19V9M12 19V5M19 19v-6"/></svg><span style="font-size: 10px; font-weight: 700; color: #D7F25A;">Progress</span></div>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

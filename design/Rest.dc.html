@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #0B0C0F; color: #F2F4F7; font-family: Manrope, "Segoe UI", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #D7F25A; } a:hover { color: #EAFF8F; }
+    .d { font-family: Oswald, "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: 0.02em; font-weight: 600; }
+  </style>
+</helmet>
+  <style>
+    .fig .shin  { transform-box: view-box; transform-origin: 96px 236px; animation: shin 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    .fig .thigh { transform-box: view-box; transform-origin: 96px 186px; animation: thigh 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    .fig .torso { transform-box: view-box; transform-origin: 96px 136px; animation: torso 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    .fig .arm   { transform-box: view-box; transform-origin: 100px 80px;  animation: arm 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    .fig .shade { transform-box: view-box; transform-origin: 96px 244px;  animation: shade 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    @keyframes shin  { 0%,6% { transform: rotate(0deg); } 42%,54% { transform: rotate(34deg); } 92%,100% { transform: rotate(0deg); } }
+    @keyframes thigh { 0%,6% { transform: rotate(0deg); } 42%,54% { transform: rotate(-68deg); } 92%,100% { transform: rotate(0deg); } }
+    @keyframes torso { 0%,6% { transform: rotate(0deg); } 42%,54% { transform: rotate(52deg); } 92%,100% { transform: rotate(0deg); } }
+    @keyframes arm   { 0%,6% { transform: rotate(0deg); } 42%,54% { transform: rotate(-78deg); } 92%,100% { transform: rotate(0deg); } }
+    @keyframes shade { 0%,6% { transform: scale(1); opacity: .5; } 42%,54% { transform: scale(1.22); opacity: .78; } 92%,100% { transform: scale(1); opacity: .5; } }
+  </style>
+
+<div style="width: 390px; height: 844px; overflow: hidden; background: #0B0C0F; display: flex; flex-direction: column; background: radial-gradient(110% 60% at 50% 0%, #101820 0%, #0B0C0F 60%);">
+  <div style="padding: 52px 20px 0 20px; display: flex; align-items: center; justify-content: space-between;">
+    <div style="font-size: 12px; font-weight: 800; color: #8B929C; letter-spacing: 0.08em;">EXERCISE 5 OF 12</div>
+    <div style="font-size: 12px; font-weight: 700; color: #6D747E;">12:04 left</div>
+  </div>
+
+  <div style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding-bottom: 8px;">
+    <div class="d" style="font-size: 15px; color: #7FA8C9; letter-spacing: 0.34em; margin-bottom: 4px;">Rest</div>
+    <div style="position: relative; width: 232px; height: 232px; display: flex; align-items: center; justify-content: center;">
+      <svg width="232" height="232" viewBox="0 0 232 232" fill="none" style="position: absolute; inset: 0; transform: rotate(-90deg);">
+        <circle cx="116" cy="116" r="104" stroke="#1B2129" stroke-width="10"/>
+        <circle cx="116" cy="116" r="104" stroke="#5FA8E0" stroke-width="10" stroke-linecap="round" stroke-dasharray="653" stroke-dashoffset="196"/>
+      </svg>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="d" style="font-size: 66px; line-height: 1; color: #F2F4F7;">00:28</div>
+        <div style="font-size: 11px; font-weight: 800; color: #6D747E; letter-spacing: 0.14em; margin-top: 6px;">GET READY</div>
+      </div>
+    </div>
+    <div style="display: flex; gap: 12px; margin-top: 22px;">
+      <div style="height: 46px; padding: 0 20px; border-radius: 14px; border: 1px solid #2A303A; display: flex; align-items: center; gap: 7px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C8CED6" stroke-width="2" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg>
+        <span style="font-size: 14px; font-weight: 800; color: #E7EBF0;">10 sec</span>
+      </div>
+      <div style="height: 46px; padding: 0 20px; border-radius: 14px; background: #1D242C; display: flex; align-items: center; gap: 7px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9FC9EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5l9 7-9 7zM18 5v14"/></svg>
+        <span style="font-size: 14px; font-weight: 800; color: #9FC9EA;">Skip rest</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin: 0 16px 30px 16px; border-radius: 22px; background: #13161B; border: 1px solid #1E222A; padding: 14px; display: flex; align-items: center; gap: 14px;">
+    <div style="width: 104px; height: 104px; border-radius: 16px; background: #0F1216; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden;">
+        <svg class="fig" viewBox="0 0 200 262" width="96" height="126" fill="none">
+          <ellipse class="shade" cx="96" cy="244" rx="44" ry="7" fill="#D7F25A" opacity="0.5"/>
+          <path d="M28 244h140" stroke="#2A2F38" stroke-width="2" stroke-linecap="round"/>
+          <path d="M168 200v40M162 206l6-6 6 6" stroke="#3A414C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 6"/>
+          <path d="M92 236h22l8 6h-34z" fill="#E9EEF4"/>
+          <g class="shin">
+            <path d="M96 236V186" stroke="#E9EEF4" stroke-width="15" stroke-linecap="round"/>
+            <g class="thigh">
+              <path d="M96 186v-50" stroke="#E9EEF4" stroke-width="17" stroke-linecap="round"/>
+              <g class="torso">
+                <path d="M96 138v-20" stroke="#D7F25A" stroke-width="20" stroke-linecap="round"/>
+                <path d="M97 122 100 80" stroke="#E9EEF4" stroke-width="21" stroke-linecap="round"/>
+                <circle cx="104" cy="60" r="14" fill="#E9EEF4"/>
+                <path d="M113 55h6" stroke="#E9EEF4" stroke-width="5" stroke-linecap="round"/>
+                <g class="arm">
+                  <path d="M100 80 106 108 112 130" stroke="#CBD3DC" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 7px; flex-grow: 1;">
+      <span style="font-size: 10px; font-weight: 800; color: #6D747E; letter-spacing: 0.14em;">NEXT UP</span>
+      <span class="d" style="font-size: 21px; line-height: 1;">Push-ups</span>
+      <span style="font-size: 12px; font-weight: 600; color: #8B929C;">10 reps · Chest, Triceps</span>
+      <div style="display: flex; gap: 6px; margin-top: 2px;">
+        <span style="height: 22px; padding: 0 9px; border-radius: 999px; background: rgba(215,242,90,0.12); color: #D7F25A; font-size: 10px; font-weight: 800; display: flex; align-items: center;">PREVIEW</span>
+        <span style="height: 22px; padding: 0 9px; border-radius: 999px; border: 1px solid #2A303A; color: #8B929C; font-size: 10px; font-weight: 700; display: flex; align-items: center;">Replace</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

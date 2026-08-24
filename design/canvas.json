@@ -1,0 +1,23 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",           "x": 0,    "y": 0,    "w": 390, "h": 844,  "title": "Home · EN" },
+    { "file": "HomeUA.dc.html",         "x": 480,  "y": 0,    "w": 390, "h": 844,  "title": "Home · UA" },
+    { "file": "Programs.dc.html",       "x": 960,  "y": 0,    "w": 390, "h": 844,  "title": "Programs" },
+    { "file": "WorkoutIntro.dc.html",   "x": 1440, "y": 0,    "w": 390, "h": 844,  "title": "Workout intro" },
+
+    { "file": "Countdown.dc.html",      "x": 0,    "y": 1010, "w": 390, "h": 844,  "title": "3-2-1 countdown" },
+    { "file": "Exercise.dc.html",       "x": 480,  "y": 1010, "w": 390, "h": 844,  "title": "Exercise" },
+    { "file": "Rest.dc.html",           "x": 960,  "y": 1010, "w": 390, "h": 844,  "title": "Rest" },
+    { "file": "Complete.dc.html",       "x": 1440, "y": 1010, "w": 390, "h": 844,  "title": "Workout complete" },
+
+    { "file": "Library.dc.html",        "x": 0,    "y": 2020, "w": 390, "h": 844,  "title": "Exercise library" },
+    { "file": "ExerciseDetail.dc.html", "x": 480,  "y": 2020, "w": 390, "h": 1180, "title": "Exercise detail" },
+    { "file": "Progress.dc.html",       "x": 960,  "y": 2020, "w": 390, "h": 1000, "title": "Progress" }
+  ],
+  "annotations": [
+    { "id": "flow-entry", "x": 0, "y": -170, "w": 400, "text": "ENTRY — same screen, two locales.\nOswald (display) + Manrope (body), both carry Cyrillic.\nAccent #D7F25A, surfaces #0B0C0F / #14161B." },
+    { "id": "flow-workout", "x": 0, "y": 880, "w": 400, "text": "WORKOUT LOOP — countdown → exercise → rest → complete.\nSquat figure and rest preview are live CSS/SVG animation, not stills: same rig drives every exercise (shin / thigh / torso / arm pivots)." },
+    { "id": "flow-lib", "x": 0, "y": 1890, "w": 400, "text": "LIBRARY + STATS. Muscle maps are one SVG with named regions —\nlime = primary, translucent lime = secondary. Same component at 40px thumb and 120px detail." }
+  ],
+  "launch": { "view": "canvas" }
+}

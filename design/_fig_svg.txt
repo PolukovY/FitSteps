@@ -1,0 +1,21 @@
+        <svg class="fig" viewBox="0 0 200 262" width="270" height="354" fill="none">
+          <ellipse class="shade" cx="96" cy="244" rx="44" ry="7" fill="#D7F25A" opacity="0.5"/>
+          <path d="M28 244h140" stroke="#2A2F38" stroke-width="2" stroke-linecap="round"/>
+          <path d="M168 200v40M162 206l6-6 6 6" stroke="#3A414C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 6"/>
+          <path d="M92 236h22l8 6h-34z" fill="#E9EEF4"/>
+          <g class="shin">
+            <path d="M96 236V186" stroke="#E9EEF4" stroke-width="15" stroke-linecap="round"/>
+            <g class="thigh">
+              <path d="M96 186v-50" stroke="#E9EEF4" stroke-width="17" stroke-linecap="round"/>
+              <g class="torso">
+                <path d="M96 138v-20" stroke="#D7F25A" stroke-width="20" stroke-linecap="round"/>
+                <path d="M97 122 100 80" stroke="#E9EEF4" stroke-width="21" stroke-linecap="round"/>
+                <circle cx="104" cy="60" r="14" fill="#E9EEF4"/>
+                <path d="M113 55h6" stroke="#E9EEF4" stroke-width="5" stroke-linecap="round"/>
+                <g class="arm">
+                  <path d="M100 80 106 108 112 130" stroke="#CBD3DC" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>

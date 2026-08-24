@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #0B0C0F; color: #F2F4F7; font-family: Manrope, "Segoe UI", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #D7F25A; } a:hover { color: #EAFF8F; }
+    .d { font-family: Oswald, "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: 0.02em; font-weight: 600; }
+  </style>
+</helmet>

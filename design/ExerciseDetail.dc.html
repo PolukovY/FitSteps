@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #0B0C0F; color: #F2F4F7; font-family: Manrope, "Segoe UI", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #D7F25A; } a:hover { color: #EAFF8F; }
+    .d { font-family: Oswald, "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: 0.02em; font-weight: 600; }
+  </style>
+</helmet>
+  <style>
+    .fig .shin  { transform-box: view-box; transform-origin: 96px 236px; animation: shin 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    .fig .thigh { transform-box: view-box; transform-origin: 96px 186px; animation: thigh 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    .fig .torso { transform-box: view-box; transform-origin: 96px 136px; animation: torso 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    .fig .arm   { transform-box: view-box; transform-origin: 100px 80px;  animation: arm 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    .fig .shade { transform-box: view-box; transform-origin: 96px 244px;  animation: shade 3.4s cubic-bezier(.42,0,.35,1) infinite; }
+    @keyframes shin  { 0%,6% { transform: rotate(0deg); } 42%,54% { transform: rotate(34deg); } 92%,100% { transform: rotate(0deg); } }
+    @keyframes thigh { 0%,6% { transform: rotate(0deg); } 42%,54% { transform: rotate(-68deg); } 92%,100% { transform: rotate(0deg); } }
+    @keyframes torso { 0%,6% { transform: rotate(0deg); } 42%,54% { transform: rotate(52deg); } 92%,100% { transform: rotate(0deg); } }
+    @keyframes arm   { 0%,6% { transform: rotate(0deg); } 42%,54% { transform: rotate(-78deg); } 92%,100% { transform: rotate(0deg); } }
+    @keyframes shade { 0%,6% { transform: scale(1); opacity: .5; } 42%,54% { transform: scale(1.22); opacity: .78; } 92%,100% { transform: scale(1); opacity: .5; } }
+  </style>
+
+<div style="width: 390px; height: 1180px; overflow: hidden; background: #0B0C0F; display: flex; flex-direction: column;">
+  <div style="position: relative; height: 300px; flex-shrink: 0; background: radial-gradient(110% 85% at 50% 20%, #1A2016 0%, #0D0F13 65%); border-bottom: 1px solid #1B1F26; display: flex; align-items: center; justify-content: center;">
+    <div style="position: absolute; left: 20px; top: 52px; width: 36px; height: 36px; border-radius: 999px; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E7EBF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></div>
+    <div style="position: absolute; right: 20px; top: 52px; width: 36px; height: 36px; border-radius: 999px; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E7EBF0" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-9.5A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 2.5C19 15.5 12 20 12 20z"/></svg></div>
+    <div style="margin-top: 26px;">        <svg class="fig" viewBox="0 0 200 262" width="196" height="257" fill="none">
+          <ellipse class="shade" cx="96" cy="244" rx="44" ry="7" fill="#D7F25A" opacity="0.5"/>
+          <path d="M28 244h140" stroke="#2A2F38" stroke-width="2" stroke-linecap="round"/>
+          <path d="M168 200v40M162 206l6-6 6 6" stroke="#3A414C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 6"/>
+          <path d="M92 236h22l8 6h-34z" fill="#E9EEF4"/>
+          <g class="shin">
+            <path d="M96 236V186" stroke="#E9EEF4" stroke-width="15" stroke-linecap="round"/>
+            <g class="thigh">
+              <path d="M96 186v-50" stroke="#E9EEF4" stroke-width="17" stroke-linecap="round"/>
+              <g class="torso">
+                <path d="M96 138v-20" stroke="#D7F25A" stroke-width="20" stroke-linecap="round"/>
+                <path d="M97 122 100 80" stroke="#E9EEF4" stroke-width="21" stroke-linecap="round"/>
+                <circle cx="104" cy="60" r="14" fill="#E9EEF4"/>
+                <path d="M113 55h6" stroke="#E9EEF4" stroke-width="5" stroke-linecap="round"/>
+                <g class="arm">
+                  <path d="M100 80 106 108 112 130" stroke="#CBD3DC" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+</div>
+  </div>
+
+  <div style="flex-grow: 1; overflow: hidden; padding: 18px 20px 0 20px; display: flex; flex-direction: column; gap: 16px;">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 10px;">
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <div class="d" style="font-size: 26px; line-height: 1.05;">Bodyweight Squat</div>
+        <div style="font-size: 12px; font-weight: 600; color: #8B929C;">Присідання · Strength · No equipment</div>
+      </div>
+      <span style="height: 24px; padding: 0 10px; border-radius: 999px; border: 1px solid #D7F25A; color: #D7F25A; font-size: 10px; font-weight: 800; display: flex; align-items: center; flex-shrink: 0;">BEGINNER</span>
+    </div>
+
+    <div style="border-radius: 20px; background: #14161B; border: 1px solid #1E222A; padding: 14px 16px; display: flex; gap: 16px; align-items: center;">
+      <div style="display: flex; gap: 8px;"><svg viewBox="0 0 100 192" width="56" height="108" fill="none">
+  <circle cx="50" cy="14" r="9" fill="#232830"/>
+  <rect x="45" y="22" width="10" height="7" rx="3" fill="#232830"/>
+  <ellipse cx="30" cy="37" rx="9.5" ry="7.5" fill="#232830"/>
+  <ellipse cx="70" cy="37" rx="9.5" ry="7.5" fill="#232830"/>
+  <path d="M37 32h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H39a3 3 0 0 1-3-3V34a2 2 0 0 1 1-2z" fill="#232830"/>
+  <path d="M52 32h11a2 2 0 0 1 1 2v13a3 3 0 0 1-3 3H52a2 2 0 0 1-2-2V34a2 2 0 0 1 2-2z" fill="#232830"/>
+  <ellipse cx="23" cy="55" rx="6" ry="12" fill="#232830"/>
+  <ellipse cx="77" cy="55" rx="6" ry="12" fill="#232830"/>
+  <ellipse cx="18" cy="80" rx="5" ry="13" fill="#232830"/>
+  <ellipse cx="82" cy="80" rx="5" ry="13" fill="#232830"/>
+  <rect x="42" y="53" width="7" height="9" rx="2" fill="rgba(215,242,90,0.34)"/><rect x="51" y="53" width="7" height="9" rx="2" fill="rgba(215,242,90,0.34)"/>
+  <rect x="42" y="64" width="7" height="9" rx="2" fill="rgba(215,242,90,0.34)"/><rect x="51" y="64" width="7" height="9" rx="2" fill="rgba(215,242,90,0.34)"/>
+  <rect x="42" y="75" width="7" height="9" rx="2" fill="rgba(215,242,90,0.34)"/><rect x="51" y="75" width="7" height="9" rx="2" fill="rgba(215,242,90,0.34)"/>
+  <path d="M36 54c-2 8-2 18 1 27l3-2V54z" fill="rgba(215,242,90,0.34)"/>
+  <path d="M64 54c2 8 2 18-1 27l-3-2V54z" fill="rgba(215,242,90,0.34)"/>
+  <ellipse cx="41" cy="118" rx="9.5" ry="25" fill="#D7F25A"/>
+  <ellipse cx="59" cy="118" rx="9.5" ry="25" fill="#D7F25A"/>
+  <ellipse cx="40" cy="160" rx="6.5" ry="17" fill="#232830"/>
+  <ellipse cx="60" cy="160" rx="6.5" ry="17" fill="#232830"/>
+</svg>
+<svg viewBox="0 0 100 192" width="56" height="108" fill="none">
+  <circle cx="50" cy="14" r="9" fill="#232830"/>
+  <path d="M50 24 33 34l4 12h26l4-12z" fill="#232830"/>
+  <ellipse cx="28" cy="38" rx="9" ry="7" fill="#232830"/>
+  <ellipse cx="72" cy="38" rx="9" ry="7" fill="#232830"/>
+  <path d="M37 46h12v22l-13-6z" fill="#232830"/>
+  <path d="M63 46H51v22l13-6z" fill="#232830"/>
+  <path d="M40 70h20v18H40z" fill="#232830" rx="3"/>
+  <ellipse cx="22" cy="56" rx="6" ry="12" fill="#232830"/>
+  <ellipse cx="78" cy="56" rx="6" ry="12" fill="#232830"/>
+  <ellipse cx="17" cy="81" rx="5" ry="13" fill="#232830"/>
+  <ellipse cx="83" cy="81" rx="5" ry="13" fill="#232830"/>
+  <path d="M40 90c-6 0-9 5-9 10s4 9 10 9h8V90z" fill="#D7F25A"/>
+  <path d="M60 90c6 0 9 5 9 10s-4 9-10 9h-8V90z" fill="#D7F25A"/>
+  <ellipse cx="41" cy="130" rx="9" ry="21" fill="rgba(215,242,90,0.34)"/>
+  <ellipse cx="59" cy="130" rx="9" ry="21" fill="rgba(215,242,90,0.34)"/>
+  <ellipse cx="40" cy="164" rx="6.5" ry="16" fill="#232830"/>
+  <ellipse cx="60" cy="164" rx="6.5" ry="16" fill="#232830"/>
+</svg>
+</div>
+      <div style="display: flex; flex-direction: column; gap: 10px; flex-grow: 1;">
+        <div style="display: flex; flex-direction: column; gap: 5px;">
+          <span style="font-size: 10px; font-weight: 800; color: #D7F25A; letter-spacing: 0.1em;">PRIMARY</span>
+          <span style="font-size: 13px; font-weight: 700; color: #E7EBF0;">Quadriceps · Glutes</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 5px;">
+          <span style="font-size: 10px; font-weight: 800; color: #6D747E; letter-spacing: 0.1em;">SECONDARY</span>
+          <span style="font-size: 13px; font-weight: 700; color: #8B929C;">Hamstrings · Core</span>
+        </div>
+        <div style="display: flex; gap: 6px; margin-top: 2px;">
+          <span style="height: 22px; padding: 0 9px; border-radius: 8px; background: #191C22; color: #A7AEB8; font-size: 10px; font-weight: 800; display: flex; align-items: center;">TEMPO 3·1·1</span>
+          <span style="height: 22px; padding: 0 9px; border-radius: 8px; background: #191C22; color: #A7AEB8; font-size: 10px; font-weight: 800; display: flex; align-items: center;">12 REPS</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 20px; border-bottom: 1px solid #1B1F26; padding-bottom: 10px;">
+      <span class="d" style="font-size: 14px; color: #D7F25A; letter-spacing: 0.06em;">How to</span>
+      <span class="d" style="font-size: 14px; color: #6D747E; letter-spacing: 0.06em;">Mistakes</span>
+      <span class="d" style="font-size: 14px; color: #6D747E; letter-spacing: 0.06em;">Variations</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="display: flex; gap: 11px;">
+        <div style="width: 24px; height: 24px; border-radius: 8px; background: rgba(215,242,90,0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><span class="d" style="font-size: 12px; color: #D7F25A;">1</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 13px; font-weight: 800; color: #E7EBF0;">Starting position</span><span style="font-size: 13px; font-weight: 500; color: #8B929C; line-height: 1.45; text-wrap: pretty;">Feet shoulder-width apart, toes slightly out, chest up, core braced.</span></div>
+      </div>
+      <div style="display: flex; gap: 11px;">
+        <div style="width: 24px; height: 24px; border-radius: 8px; background: rgba(215,242,90,0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><span class="d" style="font-size: 12px; color: #D7F25A;">2</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 13px; font-weight: 800; color: #E7EBF0;">Movement</span><span style="font-size: 13px; font-weight: 500; color: #8B929C; line-height: 1.45; text-wrap: pretty;">Push hips back and bend knees until thighs reach parallel. Drive through mid-foot to stand.</span></div>
+      </div>
+      <div style="display: flex; gap: 11px;">
+        <div style="width: 24px; height: 24px; border-radius: 8px; background: rgba(215,242,90,0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#D7F25A" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v16M6 10l6-6 6 6"/></svg></div>
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 13px; font-weight: 800; color: #E7EBF0;">Breathing</span><span style="font-size: 13px; font-weight: 500; color: #8B929C; line-height: 1.45;">Inhale while lowering, exhale while standing up.</span></div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 9px;">
+      <span class="d" style="font-size: 13px; color: #C8CED6; letter-spacing: 0.08em;">Common mistakes</span>
+      <div style="display: flex; align-items: center; gap: 10px;">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+  <span style="font-size: 13px; font-weight: 600; color: #B7BEC7;">Knees collapsing inward</span></div><div style="display: flex; align-items: center; gap: 10px;">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+  <span style="font-size: 13px; font-weight: 600; color: #B7BEC7;">Rounded lower back</span></div><div style="display: flex; align-items: center; gap: 10px;">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+  <span style="font-size: 13px; font-weight: 600; color: #B7BEC7;">Heels lifting off the floor</span></div><div style="display: flex; align-items: center; gap: 10px;">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+  <span style="font-size: 13px; font-weight: 600; color: #B7BEC7;">Dropping too fast</span></div>
+    </div>
+
+    <div style="display: flex; gap: 10px;">
+      <div style="flex-grow: 1; height: 62px; border-radius: 16px; background: #14161B; border: 1px solid #1E222A; padding: 0 14px; display: flex; flex-direction: column; justify-content: center; gap: 3px;"><span style="font-size: 10px; font-weight: 800; color: #6D747E; letter-spacing: 0.1em;">EASIER</span><span style="font-size: 13px; font-weight: 700; color: #E7EBF0;">Chair Squat</span></div>
+      <div style="flex-grow: 1; height: 62px; border-radius: 16px; background: #14161B; border: 1px solid #1E222A; padding: 0 14px; display: flex; flex-direction: column; justify-content: center; gap: 3px;"><span style="font-size: 10px; font-weight: 800; color: #6D747E; letter-spacing: 0.1em;">HARDER</span><span style="font-size: 13px; font-weight: 700; color: #E7EBF0;">Jump Squat</span></div>
+    </div>
+  </div>
+
+  <div style="padding: 12px 20px 26px 20px; background: linear-gradient(180deg, rgba(11,12,15,0) 0%, #0B0C0F 45%);">
+    <div style="height: 54px; border-radius: 16px; background: #D7F25A; display: flex; align-items: center; justify-content: center;"><span class="d" style="font-size: 17px; color: #10130A; letter-spacing: 0.08em;">Try exercise</span></div>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

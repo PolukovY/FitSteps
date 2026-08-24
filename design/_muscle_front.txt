@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 192" width="__W__" height="__H__" fill="none">
+  <circle cx="50" cy="14" r="9" fill="__BASE__"/>
+  <rect x="45" y="22" width="10" height="7" rx="3" fill="__BASE__"/>
+  <ellipse cx="30" cy="37" rx="9.5" ry="7.5" fill="__DELT__"/>
+  <ellipse cx="70" cy="37" rx="9.5" ry="7.5" fill="__DELT__"/>
+  <path d="M37 32h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H39a3 3 0 0 1-3-3V34a2 2 0 0 1 1-2z" fill="__CHEST__"/>
+  <path d="M52 32h11a2 2 0 0 1 1 2v13a3 3 0 0 1-3 3H52a2 2 0 0 1-2-2V34a2 2 0 0 1 2-2z" fill="__CHEST__"/>
+  <ellipse cx="23" cy="55" rx="6" ry="12" fill="__ARM__"/>
+  <ellipse cx="77" cy="55" rx="6" ry="12" fill="__ARM__"/>
+  <ellipse cx="18" cy="80" rx="5" ry="13" fill="__BASE__"/>
+  <ellipse cx="82" cy="80" rx="5" ry="13" fill="__BASE__"/>
+  <rect x="42" y="53" width="7" height="9" rx="2" fill="__CORE__"/><rect x="51" y="53" width="7" height="9" rx="2" fill="__CORE__"/>
+  <rect x="42" y="64" width="7" height="9" rx="2" fill="__CORE__"/><rect x="51" y="64" width="7" height="9" rx="2" fill="__CORE__"/>
+  <rect x="42" y="75" width="7" height="9" rx="2" fill="__CORE__"/><rect x="51" y="75" width="7" height="9" rx="2" fill="__CORE__"/>
+  <path d="M36 54c-2 8-2 18 1 27l3-2V54z" fill="__OBL__"/>
+  <path d="M64 54c2 8 2 18-1 27l-3-2V54z" fill="__OBL__"/>
+  <ellipse cx="41" cy="118" rx="9.5" ry="25" fill="__QUAD__"/>
+  <ellipse cx="59" cy="118" rx="9.5" ry="25" fill="__QUAD__"/>
+  <ellipse cx="40" cy="160" rx="6.5" ry="17" fill="__CALF__"/>
+  <ellipse cx="60" cy="160" rx="6.5" ry="17" fill="__CALF__"/>
+</svg>
