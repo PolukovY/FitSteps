@@ -14,6 +14,7 @@ npm install
 npm run dev          # http://localhost:5173/fitSteps/
 npm run build      # type-check + production bundle into dist/
 npm run preview
+npm test           # data + engine integrity check
 ```
 
 ## Deployment
