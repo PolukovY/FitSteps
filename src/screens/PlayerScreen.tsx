@@ -192,7 +192,10 @@ export function PlayerScreen() {
         </div>
         <div className="player-target col">
           {timed ? (
-            <span className="d player-target-value">{formatClock(session.remaining)}</span>
+            <span className="d player-target-value">
+              {/* During the countdown `remaining` belongs to the countdown, not the exercise. */}
+              {formatClock(isCountdown || isSwitch ? (step.durationSeconds ?? 0) : session.remaining)}
+            </span>
           ) : (
             <span className="d player-target-value">
               {session.repsDone}

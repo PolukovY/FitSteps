@@ -118,6 +118,22 @@ export function useWorkoutSession({ steps: initialSteps, countdown = true, onEve
     }
   }, [beginStep, fire, index, side, startPhase, step, steps.length])
 
+  // The initial phase is armed here rather than in useState: the ticking loop
+  // works off `deadline`, and a phase whose deadline was never set would sit
+  // frozen forever on the first exercise.
+  useEffect(() => {
+    if (deadline.current != null || phase === 'finished') return
+    const first = steps[0]
+    if (!first) return
+    startPhase(
+      countdown ? 'countdown' : 'exercise',
+      countdown ? COUNTDOWN_SECONDS : (isTimed(first) ? first.durationSeconds! : null),
+      { index: 0, side: 1 },
+    )
+    // Mount only: later phases arm themselves through startPhase.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   // Single ticking loop. Phase transitions are decided from the deadline, so
   // the UI can re-render at any rate without affecting workout timing.
   useEffect(() => {
