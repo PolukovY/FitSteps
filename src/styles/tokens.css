@@ -1,0 +1,51 @@
+:root {
+  /* Surfaces — cool near-black, low saturation */
+  --bg: #0B0C0F;
+  --surface: #14161B;
+  --surface-2: #191C22;
+  --surface-3: #1B1F26;
+  --line: #1E222A;
+  --line-strong: #2A303A;
+
+  /* Text */
+  --text: #F2F4F7;
+  --text-2: #C8CED6;
+  --text-3: #8B929C;
+  --text-4: #6D747E;
+  --text-5: #565C66;
+
+  /* Accent — single lime hue carries the whole product */
+  --accent: #D7F25A;
+  --accent-ink: #10130A;
+  --accent-soft: rgba(215, 242, 90, 0.12);
+  --accent-line: #3A4426;
+  --accent-dim: rgba(215, 242, 90, 0.34);
+
+  /* Semantic */
+  --hot: #FF7A45;
+  --hot-text: #FF9166;
+  --hot-soft: rgba(255, 122, 69, 0.12);
+  --cool: #7FC7E8;
+  --rest: #5FA8E0;
+  --violet: #B69CF0;
+
+  /* Muscle map */
+  --muscle-base: #232830;
+  --muscle-primary: var(--accent);
+  --muscle-secondary: var(--accent-dim);
+
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 18px;
+  --r-xl: 22px;
+  --r-2xl: 26px;
+  --r-full: 999px;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --font-display: Oswald, "Arial Narrow", "Helvetica Neue", sans-serif;
+  --font-body: Manrope, "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --nav-h: 82px;
+}
