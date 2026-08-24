@@ -1,0 +1,59 @@
+.intro { display: flex; flex-direction: column; height: 100%; position: relative; }
+
+.intro-hero {
+  position: relative;
+  min-height: 300px;
+  padding: calc(var(--safe-top) + 20px) 20px 22px 20px;
+  background: radial-gradient(110% 80% at 70% 10%, #212814 0%, var(--bg) 68%);
+  border-bottom: 1px solid var(--surface-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.intro-hero-figure { position: absolute; right: 0; top: calc(var(--safe-top) + 46px); opacity: 0.9; }
+.intro-hero-copy { gap: 10px; position: relative; }
+.intro-title { font-size: 32px; line-height: 1.02; margin: 0; max-width: 72%; }
+.intro-desc { margin: 0; font-size: 13px; font-weight: 500; color: var(--text-3); line-height: 1.45; max-width: 88%; text-wrap: pretty; }
+
+.intro-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 16px 20px 0 20px; }
+.intro-stat { height: 74px; align-items: center; justify-content: center; gap: 4px; }
+.intro-stat-value { font-size: 22px; }
+
+.intro-muscles { margin: 12px 20px 0 20px; padding: 14px 16px; gap: 16px; }
+.intro-muscle-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.intro-toggles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 12px 20px 0 20px; }
+.intro-toggle { padding: 12px 14px; font-size: 13px; font-weight: 700; color: var(--text-2); }
+
+.intro-list { padding: 18px 20px 0 20px; gap: 2px; }
+.intro-list .section-title { margin-bottom: 8px; }
+
+.intro-row { gap: 12px; padding: 10px 0; border-bottom: 1px solid #191C23; }
+.intro-index {
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--text-3);
+  font-size: 15px;
+}
+.intro-index.extra { background: var(--accent-soft); color: var(--accent); }
+.intro-row-name { font-size: 14px; font-weight: 700; color: #E7EBF0; }
+.intro-row-meta { font-size: 11px; font-weight: 700; color: var(--text-3); }
+.intro-row-meta.extra { color: var(--accent); letter-spacing: 0.08em; }
+.intro-tempo { font-size: 12px; font-weight: 700; color: var(--text-4); }
+
+.intro-cta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 20px calc(24px + var(--safe-bottom)) 20px;
+  background: linear-gradient(180deg, rgba(11, 12, 15, 0) 0%, var(--bg) 40%);
+}

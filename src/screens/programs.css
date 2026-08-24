@@ -1,0 +1,67 @@
+.programs { display: flex; flex-direction: column; gap: 16px; }
+.programs-title { font-size: 28px; margin: 0; }
+
+.programs-active {
+  border-radius: var(--r-xl);
+  background: linear-gradient(150deg, #1B2114 0%, var(--surface) 60%);
+  border: 1px solid #2C331E;
+  padding: 16px;
+  gap: 12px;
+  text-align: left;
+  color: inherit;
+}
+
+.programs-active-meta { font-size: 11px; font-weight: 700; color: var(--text-3); }
+.programs-active-name { font-size: 24px; }
+.programs-active-pct { font-size: 24px; color: var(--accent); }
+
+.programs-week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; margin-top: 4px; }
+
+.programs-day {
+  height: 36px;
+  border-radius: var(--r-sm);
+  background: #15181E;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-5);
+}
+
+.programs-day.rest { background: #15181E; color: var(--text-5); }
+.programs-day.today { border-color: var(--accent); color: var(--accent); background: var(--surface-3); }
+.programs-day.done { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+.programs-legend { gap: 14px; margin-top: 2px; font-size: 10px; font-weight: 700; color: var(--text-3); }
+.programs-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.programs-legend .dot { width: 8px; height: 8px; border-radius: 3px; background: #21252C; display: inline-block; }
+.programs-legend .dot.done { background: var(--accent); }
+.programs-legend .dot.today { background: none; border: 1px solid var(--accent); }
+
+.programs-list { gap: 10px; }
+.programs-card { padding: 15px 16px; gap: 8px; color: inherit; }
+.programs-card-name { font-size: 20px; line-height: 1.1; }
+.programs-card-meta { font-size: 12px; font-weight: 600; color: var(--text-4); }
+
+.programs-week-block { padding: 14px 16px; gap: 12px; }
+.programs-day-row { gap: 10px; padding: 6px 0; }
+.programs-day-row.today .programs-day-name { color: var(--accent); font-weight: 800; }
+
+.programs-day-mark {
+  width: 26px;
+  height: 26px;
+  border-radius: 9px;
+  background: var(--surface-2);
+  color: var(--text-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.programs-day-mark.done { background: var(--accent); color: var(--accent-ink); }
+.programs-day-mark.rest { opacity: 0.55; }
+.programs-day-name { font-size: 13px; font-weight: 600; color: var(--text-2); }

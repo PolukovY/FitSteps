@@ -1,0 +1,89 @@
+.home { display: flex; flex-direction: column; gap: 20px; }
+
+.home-head { gap: 12px; }
+.home-greet { font-size: 13px; font-weight: 600; color: var(--text-3); letter-spacing: 0.04em; }
+.home-name { font-size: 28px; line-height: 1; }
+.home-lang { font-size: 12px; font-weight: 800; letter-spacing: 0.06em; color: var(--text-3); background: none; border: 1px solid var(--line); }
+
+.home-today {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-xl);
+  border: 1px solid #2C331E;
+  background: linear-gradient(150deg, #1B2114 0%, var(--surface) 55%);
+  padding: 20px;
+  gap: 16px;
+}
+
+.home-today-glow {
+  position: absolute;
+  right: -40px;
+  top: -30px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(215, 242, 90, 0.07);
+}
+
+.home-today-figure {
+  position: absolute;
+  right: -6px;
+  bottom: 58px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.home-today-title { font-size: 30px; line-height: 1.05; margin: 0; max-width: 62%; }
+.home-today-meta { gap: 14px; font-size: 13px; font-weight: 600; color: var(--text-3); flex-wrap: wrap; }
+
+.home-rest { gap: 12px; padding: 18px 18px 18px 18px; align-items: flex-start; }
+.home-rest-title { font-size: 22px; }
+.home-rest .btn { margin-top: 4px; }
+.home-rest .muted { line-height: 1.45; }
+
+.home-week { padding: 16px; gap: 14px; }
+.home-week-count { font-size: 12px; font-weight: 700; color: var(--accent); }
+.home-week-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.home-day { align-items: center; gap: 8px; }
+
+.home-day-cell {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--surface-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-ink);
+}
+
+.home-day-cell.done { background: var(--accent); }
+.home-day-cell.today { border: 1px solid var(--accent); background: var(--surface-3); }
+.home-day-label { font-size: 11px; font-weight: 700; color: var(--text-5); }
+.home-day-label.today { color: var(--accent); font-weight: 800; }
+
+.home-streak { padding: 14px 16px; }
+.home-flame {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: var(--hot-soft);
+  color: var(--hot);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-streak-value { font-size: 22px; line-height: 1; color: var(--hot-text); }
+
+.home-quick { display: flex; gap: 10px; }
+.home-quick-card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 10px 12px 12px 12px;
+  gap: 4px;
+  align-items: flex-start;
+  overflow: hidden;
+  color: inherit;
+}
+.home-quick-card svg { margin: -4px 0 -8px -6px; }
+.home-quick-title { font-size: 18px; }
